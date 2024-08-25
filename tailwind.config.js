@@ -1,7 +1,11 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./src/**/*.{html,js}"],
+  content: ["./*.{html,js}"],
   theme: {
+    screens: {
+      'lg' : {'min' : '768px'},
+      'md' : {'max': '767px'},
+    },
     fontFamily: {
       poppins: ["Poppins", "sans-serif"],
     },

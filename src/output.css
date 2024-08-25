@@ -570,8 +570,32 @@ video {
   top: 17px;
 }
 
+.m-4 {
+  margin: 1rem;
+}
+
+.m-8 {
+  margin: 2rem;
+}
+
+.m-20 {
+  margin: 5rem;
+}
+
 .mb-8 {
   margin-bottom: 2rem;
+}
+
+.mt-4 {
+  margin-top: 1rem;
+}
+
+.mt-10 {
+  margin-top: 2.5rem;
+}
+
+.mt-20 {
+  margin-top: 5rem;
 }
 
 .flex {
@@ -612,14 +636,6 @@ video {
 
 .w-\[640px\] {
   width: 640px;
-}
-
-.w-screen {
-  width: 100vw;
-}
-
-.max-w-screen-sm {
-  max-width: 640px;
 }
 
 .cursor-pointer {
@@ -670,7 +686,7 @@ video {
   border-width: 1px;
 }
 
-.border-\[\#DBD5EC\] {
+.border-lavender-gray {
   --tw-border-opacity: 1;
   border-color: rgb(219 213 236 / var(--tw-border-opacity));
 }
@@ -682,11 +698,6 @@ video {
 
 .border-transparent {
   border-color: transparent;
-}
-
-.border-lavender-gray {
-  --tw-border-opacity: 1;
-  border-color: rgb(219 213 236 / var(--tw-border-opacity));
 }
 
 .bg-creamy-peach {
@@ -825,11 +836,6 @@ video {
   opacity: 0.5;
 }
 
-.hover\:border-\[\#DBD5EC\]:hover {
-  --tw-border-opacity: 1;
-  border-color: rgb(219 213 236 / var(--tw-border-opacity));
-}
-
 .hover\:border-lavender-gray:hover {
   --tw-border-opacity: 1;
   border-color: rgb(219 213 236 / var(--tw-border-opacity));
@@ -846,48 +852,38 @@ video {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
-@media not all and (min-width: 1024px) {
-  .max-lg\:grid-cols-2 {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+@media (min-width: 768px) {
+  .lg\:grid {
+    display: grid;
   }
 
-  .max-lg\:grid-rows-2 {
-    grid-template-rows: repeat(2, minmax(0, 1fr));
-  }
-}
-
-@media not all and (min-width: 640px) {
-  .max-sm\:grid-cols-2 {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
-  .max-sm\:grid-cols-4 {
-    grid-template-columns: repeat(4, minmax(0, 1fr));
-  }
-
-  .max-sm\:grid-rows-2 {
-    grid-template-rows: repeat(2, minmax(0, 1fr));
-  }
-
-  .max-sm\:grid-rows-4 {
-    grid-template-rows: repeat(4, minmax(0, 1fr));
-  }
-}
-
-@media (min-width: 1024px) {
   .lg\:grid-cols-4 {
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 
-  .lg\:grid-cols-2 {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
-  .lg\:grid-rows-4 {
-    grid-template-rows: repeat(4, minmax(0, 1fr));
-  }
-
   .lg\:grid-rows-2 {
     grid-template-rows: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 767px) {
+  .md\:m-20 {
+    margin: 5rem;
+  }
+
+  .md\:grid-cols-1 {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+
+  .md\:grid-rows-1 {
+    grid-template-rows: repeat(1, minmax(0, 1fr));
+  }
+
+  .md\:p-\[\] {
+    padding: ;
+  }
+
+  .md\:p-5 {
+    padding: 1.25rem;
   }
 }
