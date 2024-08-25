@@ -25,6 +25,10 @@ module.exports = {
         'vanilla' : '#FFF3C9',
         'creamy-peach' : '#FFD9C9',
       },
+
+      maxWidth: {
+        '1440' : '1440px',
+      },
     },
   },
   plugins: [],
